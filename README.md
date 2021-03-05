@@ -21,4 +21,4 @@ Fill missing values there.
 
 ### Connect to oauth2 provider
 
-Go to `http://not-localhost:3011/oauth2/start and have fun!
+Go to `http://localhost:3011/oauth2/start and have fun!
