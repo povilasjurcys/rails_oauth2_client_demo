@@ -1,24 +1,24 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+`3011` is a default port for this oauth2 client app, so in order to open this app, you need to go to http://localhost:3011.
 
-Things you may want to cover:
+## How to use it?
 
-* Ruby version
+### Create app on oauth2 provider side
 
-* System dependencies
+Go to oauth provider apps page: http://localhost:3000/oauth/applications.
+Create oauth2 app with callback url `http://localhost:3011/oauth2/callback`.
 
-* Configuration
+### Start oauth2 client app
 
-* Database creation
+Create `.env` file by copy-pasting `.env.example`:
 
-* Database initialization
+```bash
+cp .env.example .env
+```
 
-* How to run the test suite
+Fill missing values there.
 
-* Services (job queues, cache servers, search engines, etc.)
+### Connect to oauth2 provider
 
-* Deployment instructions
-
-* ...
+Go to `http://not-localhost:3011/oauth2/start and have fun!
